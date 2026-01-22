@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Sheristan | Project Deep Dive</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-950 text-gray-100 scroll-smooth">
+
+  <!-- Header -->
+  <header class="border-b border-gray-800">
+    <div class="max-w-6xl mx-auto px-6 py-6 flex justify-between items-center">
+      <h1 class="text-xl font-semibold">Sheristan</h1>
+      <a href="index.html" class="text-sm text-gray-400 hover:text-white">← Back to Portfolio</a>
+    </div>
+  </header>
+
+  <!-- What is Sheristan -->
+  <section class="max-w-6xl mx-auto px-6 py-16">
+    <h2 class="text-3xl font-semibold mb-4">What is Sheristan?</h2>
+    <p class="text-gray-400 max-w-3xl leading-relaxed">
+      Sheristan is a full-stack mobile platform for reading, writing, and sharing Urdu and Hindi poetry.
+      It supports user authentication, content creation, bookmarking, social interactions, and offline access.
+      The application is built end-to-end including mobile frontend, backend APIs, database design, and production deployment.
+    </p>
+  </section>
+
+  <!-- Architecture -->
+  <section class="max-w-6xl mx-auto px-6 py-16 border-t border-gray-800">
+    <h3 class="text-2xl font-semibold mb-6">Application Architecture</h3>
+
+    <img 
+      src="sheristanArch.svg" 
+      alt="Sheristan Architecture Diagram"
+      class="rounded-xl border border-gray-800 bg-gray-900 p-4 mb-6"
+    />
+
+    <ul class="list-disc list-inside text-gray-400 space-y-2">
+      <li>React Native mobile application for user interface.</li>
+      <li>Spring Boot backend exposing REST APIs.</li>
+      <li>MongoDB for persistence and indexing.</li>
+      <li>Dockerized services running on AWS EC2.</li>
+      <li>CI/CD pipeline for automated builds and deployments.</li>
+    </ul>
+  </section>
+
+ <!-- Repository -->
+<section class="max-w-6xl mx-auto px-6 py-16 border-t border-gray-800">
+  <h3 class="text-2xl font-semibold mb-6">Source Code</h3>
+
+  <p class="text-gray-400 mb-4">
+    The production repository is private. A public reference link is provided below, along with a snapshot of the actual project structure to demonstrate real-world organization and scale.
+  </p>
+
+  <!-- Repo Link -->
+  <div class="mb-6">
+    <span class="text-gray-300 font-medium">Repository URL:</span>
+    <a 
+      href="https://github.com/sheristan/sheristan-app-prod/"
+      target="_blank"
+      class="ml-2 text-blue-400 hover:text-blue-300 underline underline-offset-4"
+    >
+      https://github.com/sheristan/sheristan-app-prod/
+    </a>
+  </div>
+
+  <!-- Screenshot -->
+  <div class="bg-gray-900 p-4 rounded-xl border border-gray-800">
+    <img 
+      src="repo-structure.png" 
+      alt="Sheristan Repository Structure"
+      class="rounded-lg"
+    />
+  </div>
+
+  <!-- Context -->
+  <p class="text-gray-500 text-sm mt-4">
+    Snapshot highlights frontend (React Native), backend services, configuration files, scripts, and deployment assets used in the production system.
+  </p>
+</section>
+
+
+  <!-- Play Store -->
+  <section class="max-w-6xl mx-auto px-6 py-16 border-t border-gray-800 text-center">
+    <h3 class="text-2xl font-semibold mb-6">Download Sheristan</h3>
+
+    <a 
+      href="https://play.google.com/store/apps/details?id=com.sheristan"
+      target="_blank"
+      class="inline-flex items-center gap-3 bg-white text-black px-6 py-3 rounded-xl font-semibold hover:bg-gray-200 transition"
+    >
+      <img src="PlayStoreImage.png" class="w-6 h-6" />
+      Get it on Google Play
+    </a>
+  </section>
+
+</body>
+</html>
